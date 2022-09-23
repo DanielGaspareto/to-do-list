@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align:center;">Edit Task</h1>
+<form action="/edit/{{todo.id}}" class="container" method="post">
+    <div class="row">
+      <div class="col-md-6">
+          <h3>Edit task</h3>
+        <input type="text" name="task" id="task" placeholder="task" class="form-control" value="{{todo.task}}">
+      </div>
+      <div class="col-md-6">
+          <h3>Edit days</h3>
+        <input type="text" name="days" id="days" placeholder="days" class="form-control" value="{{todo.days}}">
+      </div>
+    </div>
+    <br>
+    <div class="row cols-xs-12">
+      <button type="submit" class="btn btn-block btn-success">Send</button>
+    </div>
+</form>
+</body>
+</html>
